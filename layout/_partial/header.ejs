@@ -1,6 +1,6 @@
 <!-- header start -->
 		<!-- ================ --> 
-		<header class="header fixed clearfix navbar navbar-fixed-top">
+		<header class="header clearfix navbar navbar-fixed-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -11,13 +11,13 @@
 
 							<!-- logo -->
 							<div class="logo smooth-scroll">
-								<a href="#banner"><%- image_tag('/img/logo.png', {id:'logo',alt:config.title}) %></a>
+								<a href="<%- config.root %>"><%- image_tag('/img/logo.png', {id:'logo',alt:config.title}) %></a>
 							</div>
 
-							<!-- name-and-slogan -->
-							<div class="site-name-and-slogan smooth-scroll">
-								<div class="site-name"><a href="<%- config.root %>"><%= config.title %></a></div>
-								<div class="site-slogan"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></div>
+							<!-- title-subtitle -->
+							<div class="title-subtitle smooth-scroll">
+								<div class="title"><a href="<%- config.root %>"><%= config.title %></a></div>
+								<div class="subtitle"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></div>
 							</div>
 
 						</div>
