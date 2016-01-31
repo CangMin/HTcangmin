@@ -10,12 +10,12 @@
 						<div class="header-left clearfix">
 
 							<!-- logo -->
-							<div class="logo smooth-scroll">
+							<div class="logo">
 								<a href="<%- config.root %>"><%- image_tag('/img/logo.png', {id:'logo',alt:config.title}) %></a>
 							</div>
 
 							<!-- title-subtitle -->
-							<div class="title-subtitle smooth-scroll">
+							<div class="title-subtitle">
 								<div class="sitetitle"><a href="<%- config.root %>"><%= config.title %></a></div>
 								<div class="subtitle"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></div>
 							</div>
@@ -32,7 +32,7 @@
 
 							<!-- main-navigation start -->
 							<!-- ================ -->
-							<div class="main-navigation animated">
+							<div class="main-navigation">
 
 								<!-- navbar start -->
 								<!-- ================ -->
@@ -50,7 +50,7 @@
 										</div>
 
 										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+										<div class="collapse navbar-collapse" id="navbar-collapse-1">
 											<ul class="nav navbar-nav navbar-right">
 											  <% for (var i in theme.menu){ %>
       <li><a href="<%- config.root %><%- theme.menu[i] %>"><%= i %></a></li>
@@ -73,3 +73,19 @@
 			</div>
 		</header>
 		<!-- header end -->
+
+		<!-- banner start -->
+		<!-- ================ -->
+		<div id="banner" class="banner">
+			<div class="banner-image"><%- image_tag('/img/banner.jpg') %></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<p class="text-center"><%= config.description %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
