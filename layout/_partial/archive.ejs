@@ -16,7 +16,7 @@ if (page.archive){
 };
 %>
 
-<div class="col-md-4" >
+<div class="col-md-3" >
   <h2 class="<%= icon %>-icon"><%= title %></h2>
   <% if(page.archive){ %>
   <div class="archiveslist">
@@ -24,7 +24,7 @@ if (page.archive){
  </div>
   <% } %>
 </div>
-<div id="main" class="col-md-8 clearfix">
+<div id="main" class="col-md-9 clearfix">
   <div id="archive-page">
 <% page.posts.each(function(item){ %>
   <%- partial('_partial/article_row', {item: item, index: true}) %>

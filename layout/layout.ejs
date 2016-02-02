@@ -5,8 +5,16 @@
       <%- partial('_partial/header') %>
     </header>
     <div id="container">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-8">
       <%- body %>
-      <%- partial('_partial/sidebar',{item: page,table: true}) %>
+        </div>
+        <div class="col-md-4">
+      <%- partial('_partial/post/toc',{item: page,table: true}) %>
+        </div>
+        </div>
+      </div>
     </div>
     <footer><%- partial('_partial/footer') %></footer>
     <%- partial('_partial/after_footer') %>
@@ -93,8 +101,16 @@
       <%- partial('_partial/header') %>
     </header>
     <div id="container">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-8">
       <%- body %>
-      <%- partial('_partial/sidebar',{item: page,table: false}) %>
+        </div>
+        <div class="col-md-4">
+      <%- partial('_partial/sidebar',{item: page,table: true}) %>
+        </div>
+        </div>
+      </div>
     </div>
     <footer><%- partial('_partial/footer') %></footer>
     <%- partial('_partial/after_footer') %>
